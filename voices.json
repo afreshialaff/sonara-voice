@@ -1,0 +1,168 @@
+{
+  "provider": "elevenlabs",
+  "recommended_model": "eleven_v4",
+  "voices": [
+    {
+      "name": "Ricky",
+      "voice_id": "2VMRgGhWXuHXWN2xNHM8",
+      "accent": "id",
+      "style": "Young male, soft cinematic storytelling"
+    },
+    {
+      "name": "Angga",
+      "voice_id": "Aw7qttNp8aSAczVs9nwb",
+      "accent": "id",
+      "style": "Male, conversational, expressive"
+    },
+    {
+      "name": "Vivan",
+      "voice_id": "ZowYWFat3iypr7PwKMPb",
+      "accent": "id",
+      "style": "Male, warm YouTube narrator"
+    },
+    {
+      "name": "Riri Rida",
+      "voice_id": "tCKeP99grYL9wZRg6sQ9",
+      "accent": "id",
+      "style": "Female, documentary and news"
+    },
+    {
+      "name": "Azka",
+      "voice_id": "DPPzLATaOfLZsVFY8RtJ",
+      "accent": "id",
+      "style": "Calm and soft, social media ads"
+    },
+    {
+      "name": "Bagas",
+      "voice_id": "aJiaMo73BheNakP6EPev",
+      "accent": "id",
+      "style": "Male, relaxed, bedtime stories"
+    },
+    {
+      "name": "Denas",
+      "voice_id": "arwfiAiEfIHHZCwcYYx2",
+      "accent": "id",
+      "style": "Male, charismatic storyteller"
+    },
+    {
+      "name": "Maliq",
+      "voice_id": "EIcz16yo4q5hJFhNay0n",
+      "accent": "id-javanese",
+      "style": "Male, energetic, short-form video"
+    },
+    {
+      "name": "Bayu",
+      "voice_id": "saYZ00LWtwkN6VaX46N9",
+      "accent": "id-javanese",
+      "style": "Male, calm, classroom teaching"
+    },
+    {
+      "name": "Yohana",
+      "voice_id": "3LbF2aYdhN7is4EhoBtI",
+      "accent": "id-javanese",
+      "style": "Female, calm but lively"
+    },
+    {
+      "name": "Alice",
+      "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
+      "accent": "en-british",
+      "style": "Female, clear e-learning educator"
+    },
+    {
+      "name": "Lily",
+      "voice_id": "pFZP5JQG7iQjIQuC4Bku",
+      "accent": "en-british",
+      "style": "Female, velvety actress"
+    },
+    {
+      "name": "Clara",
+      "voice_id": "0ggs85h7hrWz8ExXnsBc",
+      "accent": "en-british",
+      "style": "Young female, friendly, conversational"
+    },
+    {
+      "name": "Cherine",
+      "voice_id": "eiNgkRczHJmif3gxSoyz",
+      "accent": "en-british",
+      "style": "Female, warm audiobook narrator"
+    },
+    {
+      "name": "Matt",
+      "voice_id": "VL6NjGjfCJVl9m563oFU",
+      "accent": "en-british",
+      "style": "Male, grounded everyday explainer"
+    },
+    {
+      "name": "Sir Stephen",
+      "voice_id": "Aaz7hX6MUrjjm0ncqvAg",
+      "accent": "en-british",
+      "style": "Older male, cinematic, wise"
+    },
+    {
+      "name": "Steve",
+      "voice_id": "33aGKIlf0SKhTTaSWPVO",
+      "accent": "en-british",
+      "style": "Male, West Country accent, expressive"
+    },
+    {
+      "name": "Jordie",
+      "voice_id": "U977vpWUjb8YL0J1JaFF",
+      "accent": "en-british",
+      "style": "Young male, soft Welsh accent"
+    },
+    {
+      "name": "Jessica",
+      "voice_id": "cgSgspJ2msm6clMCkdW9",
+      "accent": "en-american",
+      "style": "Young female, playful, bright"
+    },
+    {
+      "name": "Katie",
+      "voice_id": "YyRJWuwyhKdMZRRnm464",
+      "accent": "en-american",
+      "style": "Female, podcast host"
+    },
+    {
+      "name": "Chris",
+      "voice_id": "iP95p4xoKVk53GoZ742B",
+      "accent": "en-american",
+      "style": "Male, down-to-earth"
+    },
+    {
+      "name": "Roger",
+      "voice_id": "CwhRBWXzGAHq8TQ4Fs17",
+      "accent": "en-american",
+      "style": "Male, laid-back, resonant"
+    },
+    {
+      "name": "Eric",
+      "voice_id": "cjVigY5qzO86Huf0OWal",
+      "accent": "en-american",
+      "style": "Male, smooth, trustworthy"
+    },
+    {
+      "name": "Will",
+      "voice_id": "bIHbv24MWmeRgasZH58o",
+      "accent": "en-american",
+      "style": "Young male, relaxed optimist"
+    },
+    {
+      "name": "River",
+      "voice_id": "SAz9YHcvj6GT2YYXdXww",
+      "accent": "en-american",
+      "style": "Neutral, calm, informative"
+    },
+    {
+      "name": "Lucius",
+      "voice_id": "3OjIrdtfNKDWeBUP0hIC",
+      "accent": "en-american",
+      "style": "Male, chatty friend"
+    },
+    {
+      "name": "Alex",
+      "voice_id": "rVZrlcjzRfo3xd95wVNX",
+      "accent": "en-american",
+      "style": "Young male, support agent"
+    }
+  ]
+}
