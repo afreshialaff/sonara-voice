@@ -1,13 +1,26 @@
 # Sonara
 
-Demo landing page for a fictional voice AI platform, inspired by modern AI voice sites.
+Free voiceover tool and demo site for the Curioverse Reels team (Layar).
 
-- 27 voice samples in native Indonesian, Javanese-accented Indonesian, British and American English
-- "Type your own" mode using the browser's built-in speech engine, matched to the chosen accent
-- Single static `index.html`, no build step
+## Sonara VO (the tool)
 
-Voice clips are the public preview recordings from the ElevenLabs voice library. Sonara is not a real company.
+`sonara_vo.py` turns a script into an MP3 voiceover plus word-by-word captions. It uses free Microsoft Edge neural voices through [`edge-tts`](https://github.com/rany2/edge-tts), with no API key and no credits.
 
-## Voice IDs for agents
+```bash
+pip install -r requirements.txt
+python sonara_vo.py list                                   # voices
+python sonara_vo.py say -v ardi -i contoh/naskah-langit-biru.txt -o output/langit-biru.mp3 --words
+python sonara_vo.py samples                                # one sample per voice in samples/
+```
 
-`voices.json` lists every voice with its ElevenLabs `voice_id`, accent and style, so an agent can pick a voice by accent and pass the id to text-to-speech (model `eleven_v4`).
+Voices (`sonara-voices.json`): Indonesian (Ardi, Gadis), British (Ryan, Sonia, Libby, Thomas), American (Andrew, Ava, Brian, Emma), plus experimental Javanese and Sundanese voices.
+
+Script markup: blank line = paragraph pause, `[jeda]` / `[jeda 1.2]` = pause, `[pelan]` / `[cepat]` / `[normal]` = speed, `# ...` = ignored note. ffmpeg is optional but adds real pauses and levels loudness to -14 LUFS.
+
+See `CLAUDE.md` for the full workflow and script-writing tips. Claude agents read that file automatically.
+
+**Limits.** `edge-tts` uses Microsoft's Edge read-aloud service, which has no official public API. It is free and works well today, but Microsoft could change or block it, and commercial use is not clearly covered by their terms. For guaranteed licensing, swap the engine for a paid service later. The script format stays the same.
+
+## Demo website
+
+`index.html` is a landing page for the fictional Sonara brand, served with GitHub Pages. Its voice library plays the public preview recordings from the ElevenLabs voice library (listed in `demo-voices-elevenlabs.json`). These are different voices from the Sonara VO tool, and the site cannot generate speech. Sonara is not a real company.

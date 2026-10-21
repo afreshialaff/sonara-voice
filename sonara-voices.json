@@ -1,0 +1,23 @@
+{
+  "engine": "edge-tts",
+  "notes": "Sonara voice presets. 'engine_voice' is the Microsoft Edge neural voice behind each preset. 'rate' and 'pitch' are the default delivery for Reels and can be overridden per run.",
+  "voices": [
+    {"id": "ardi",   "name": "Ardi",   "lang": "id", "accent": "Indonesia", "gender": "male",   "style": "Narator pria, hangat dan jelas. Default untuk Curioverse.", "engine_voice": "id-ID-ArdiNeural",  "rate": "+4%", "pitch": "+0Hz"},
+    {"id": "gadis",  "name": "Gadis",  "lang": "id", "accent": "Indonesia", "gender": "female", "style": "Narator wanita, ramah dan ringan.",                       "engine_voice": "id-ID-GadisNeural", "rate": "+4%", "pitch": "+0Hz"},
+
+    {"id": "dimas-jawa",  "name": "Dimas (Jawa)",  "lang": "jv", "accent": "Jawa",  "gender": "male",   "style": "Suara bahasa Jawa. Eksperimen untuk naskah Indonesia bernuansa Jawa.",   "engine_voice": "jv-ID-DimasNeural",  "rate": "+0%", "pitch": "+0Hz", "experimental": true},
+    {"id": "siti-jawa",   "name": "Siti (Jawa)",   "lang": "jv", "accent": "Jawa",  "gender": "female", "style": "Suara bahasa Jawa. Eksperimen untuk naskah Indonesia bernuansa Jawa.",   "engine_voice": "jv-ID-SitiNeural",   "rate": "+0%", "pitch": "+0Hz", "experimental": true},
+    {"id": "jajang-sunda","name": "Jajang (Sunda)","lang": "su", "accent": "Sunda", "gender": "male",   "style": "Suara bahasa Sunda. Eksperimen untuk naskah Indonesia bernuansa Sunda.", "engine_voice": "su-ID-JajangNeural", "rate": "+0%", "pitch": "+0Hz", "experimental": true},
+    {"id": "tuti-sunda",  "name": "Tuti (Sunda)",  "lang": "su", "accent": "Sunda", "gender": "female", "style": "Suara bahasa Sunda. Eksperimen untuk naskah Indonesia bernuansa Sunda.", "engine_voice": "su-ID-TutiNeural",   "rate": "+0%", "pitch": "+0Hz", "experimental": true},
+
+    {"id": "ryan",   "name": "Ryan",   "lang": "en", "accent": "British",  "gender": "male",   "style": "Warm, steady British narrator.",        "engine_voice": "en-GB-RyanNeural",   "rate": "+2%", "pitch": "+0Hz"},
+    {"id": "sonia",  "name": "Sonia",  "lang": "en", "accent": "British",  "gender": "female", "style": "Clear, confident British presenter.",   "engine_voice": "en-GB-SoniaNeural",  "rate": "+2%", "pitch": "+0Hz"},
+    {"id": "libby",  "name": "Libby",  "lang": "en", "accent": "British",  "gender": "female", "style": "Young, friendly British voice.",        "engine_voice": "en-GB-LibbyNeural",  "rate": "+2%", "pitch": "+0Hz"},
+    {"id": "thomas", "name": "Thomas", "lang": "en", "accent": "British",  "gender": "male",   "style": "Calm, measured British voice.",         "engine_voice": "en-GB-ThomasNeural", "rate": "+2%", "pitch": "+0Hz"},
+
+    {"id": "andrew", "name": "Andrew", "lang": "en", "accent": "American", "gender": "male",   "style": "Warm, conversational storyteller.",     "engine_voice": "en-US-AndrewNeural", "rate": "+4%", "pitch": "+0Hz"},
+    {"id": "ava",    "name": "Ava",    "lang": "en", "accent": "American", "gender": "female", "style": "Expressive, friendly narrator.",        "engine_voice": "en-US-AvaNeural",    "rate": "+4%", "pitch": "+0Hz"},
+    {"id": "brian",  "name": "Brian",  "lang": "en", "accent": "American", "gender": "male",   "style": "Casual, approachable voice.",           "engine_voice": "en-US-BrianNeural",  "rate": "+4%", "pitch": "+0Hz"},
+    {"id": "emma",   "name": "Emma",   "lang": "en", "accent": "American", "gender": "female", "style": "Cheerful, upbeat voice.",               "engine_voice": "en-US-EmmaNeural",   "rate": "+4%", "pitch": "+0Hz"}
+  ]
+}
