@@ -27,6 +27,7 @@ The tool needs internet access to `speech.platform.bing.com`. Behind a proxy, se
    python sonara_vo.py say -v ardi -i output/2026-10-21-langit-biru.txt -o output/2026-10-21-langit-biru.mp3 --words
    ```
    `--words` writes a word-by-word `.srt` for animated Reels captions; `--srt` writes sentence captions instead.
+   Add `--json output/<name>.json` to record the voices used and each scene's start, end and duration (one paragraph = one scene). The Curioverse skill uses this as `vo.json`.
 4. **Check the length.** The command prints the duration. Reels VO usually runs 30–60 s, which is roughly 75–150 Indonesian words. Trim the script if it runs long rather than speeding up past `--rate +12%`.
 5. **Deliver** the `.mp3` and `.srt` paths to the user. `output/` is git-ignored; do not commit renders.
 
@@ -38,7 +39,8 @@ The engine reads exactly what is written, so the script decides how natural the 
 - One idea per sentence. Put the hook first, then `[jeda]` so it lands.
 - Use punctuation for rhythm: commas for small breaths, `…` for a beat, `?` and `!` for intonation.
 - `[jeda]` (0.5 s) or `[jeda 1.2]` for a set pause; a blank line between paragraphs adds 0.6 s.
-- `[pelan]` before a key line, `[cepat]` for a quick aside, `[normal]` to reset.
+- `[pelan]` before a key line, `[cepat]` for a quick aside, `[normal]` to reset. Speed carries over to later paragraphs until `[normal]`.
+- `[suara gadis]` switches voice for the text that follows, for dialogue. `[suara ardi]` switches back. Keep each voice in its own language.
 - Lines starting with `#` are ignored, so shot notes can stay in the script.
 - Spell out anything the voice might misread: acronyms (*Ka-Pe-Ka* if it must be letters), foreign names, and units (*kilometer*, not *km*).
 - Emotion tags like `[tertawa]` or `[berbisik]` are not supported by this engine and are skipped with a note.

@@ -15,11 +15,15 @@ python sonara_vo.py samples                                # one sample per voic
 
 Voices (`sonara-voices.json`): Indonesian (Ardi, Gadis), British (Ryan, Sonia, Libby, Thomas), American (Andrew, Ava, Brian, Emma), plus experimental Javanese and Sundanese voices.
 
-Script markup: blank line = paragraph pause, `[jeda]` / `[jeda 1.2]` = pause, `[pelan]` / `[cepat]` / `[normal]` = speed, `# ...` = ignored note. ffmpeg is optional but adds real pauses and levels loudness to -14 LUFS.
+Script markup: blank line = paragraph pause, `[jeda]` / `[jeda 1.2]` = pause, `[pelan]` / `[cepat]` / `[normal]` = speed, `[suara gadis]` = switch voice (dialogue), `# ...` = ignored note. `--json` writes per-scene timings. ffmpeg is optional but adds real pauses and levels loudness to -14 LUFS.
 
 See `CLAUDE.md` for the full workflow and script-writing tips. Claude agents read that file automatically.
 
 **Limits.** `edge-tts` uses Microsoft's Edge read-aloud service, which has no official public API. It is free and works well today, but Microsoft could change or block it, and commercial use is not clearly covered by their terms. For guaranteed licensing, swap the engine for a paid service later. The script format stays the same.
+
+## Curioverse skill
+
+`skill/reels-curioverse-harian/SKILL.md` is the Reels skill updated to use Sonara VO instead of ElevenLabs. Upload it to claude.ai to replace the current version.
 
 ## Demo website
 
